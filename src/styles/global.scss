@@ -15,7 +15,8 @@ body {
   color: $black;
 }
 
-.main {
+.main,
+.footer {
   &__wrapper {
     width: 100%;
     display: flex;
@@ -34,4 +35,12 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.button {
+  background: $lightgray;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  align-self: flex-end;
+  box-shadow: 3px 3px 0 $black;
 }
