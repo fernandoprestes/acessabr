@@ -1,0 +1,20 @@
+@import './../../styles/colors';
+
+.curator {
+  &__container{
+    margin-bottom: 4rem;
+  }
+
+  &__wrapperItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 4.2rem;
+    margin-bottom: 2rem;
+    width: 292px;
+  }
+}
