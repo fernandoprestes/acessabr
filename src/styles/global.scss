@@ -38,9 +38,9 @@ img {
 }
 
 .button {
-  background: $lightgray;
-  border-radius: 0.5rem;
-  padding: 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 0.7rem 1rem;
   align-self: flex-end;
-  box-shadow: 3px 3px 0 $black;
+  border: none;
 }

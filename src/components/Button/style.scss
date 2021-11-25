@@ -1,0 +1,7 @@
+@import './../../styles/colors';
+
+.button {
+  background: $cyan;
+  color: $white;
+  box-shadow: 2px 2px 0 $black;
+}
