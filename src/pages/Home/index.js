@@ -34,6 +34,7 @@ export const Home = ({city}) => {
         <ul className="home__pills">
           {PLACES.map(item => (
             <Pills
+              key={item}
               local={item}
               handleClick={() => setSelectedPill(item)}
               selected={selectedPill === item}
