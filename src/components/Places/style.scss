@@ -1,0 +1,48 @@
+@import './../../styles/colors';
+
+@mixin displayFlexRow($width: 100%) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: $width;
+}
+
+.places {
+  &__header {
+    @include displayFlexRow;
+    margin: 4rem 0 0;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 3.2rem;
+    color: $cyan;
+    span {
+      color: $black;
+    }
+  }
+
+  &__select {
+    @include displayFlexRow($width: 25rem);
+    border-bottom: 1px solid $black;
+    padding: 0.4rem 1rem;
+    align-items: center;
+    h3 {
+      color: $darkgray;
+      font-size: 1.8rem;
+    }
+    select {
+      border: 0 none;
+      background: transparent;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: $black;
+      line-height: 2.1rem;
+      padding: 0 0.5rem;
+    }
+  }
+
+  &__content {
+  }
+}

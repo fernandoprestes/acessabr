@@ -1,0 +1,56 @@
+@import './../../styles/colors';
+
+.card {
+  &__container {
+    width: 222px;
+    margin: 5rem 0;
+
+    p {
+      font-size: 1.8rem;
+      margin-bottom: 1.8rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 222px;
+    border: 1px solid $lightcyan;
+    border-radius: 1rem;
+  }
+
+  &__content {
+    padding: 1.6rem 0;
+    h2 {
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 2.8rem;
+      color: $black;
+    }
+    p {
+      font-size: 1.8rem;
+      line-height: 2.1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__facilities {
+    display: grid;
+    grid-template-columns: repeat(5, 3rem);
+    gap: 0.5rem;
+    margin: 1rem auto;
+    list-style-type: none;
+
+    &__item {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.5rem;
+      background: $blue;
+      text-align: center;
+      padding: 0.3rem;
+
+      &--unchecked {
+        background: $lightgray;
+      }
+    }
+  }
+}
