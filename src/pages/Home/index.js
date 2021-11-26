@@ -1,6 +1,7 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { useParams } from 'react-router'
 import { Pills } from '../../components/Pills'
+import { LocationContext } from '../../contexts/LocationContext'
 import imageSpotlight from '../../images/imagem-destaque.png'
 import './styles.scss'
 
@@ -16,8 +17,16 @@ const PLACES = [
   'Aquário'
 ]
 
-export const Home = ({city}) => {
-  const [selectedPill, setSelectedPill] = useState()
+export const Home = props => {
+  const { city, state } = useParams()
+  const [selectedPill, setSelectedPill] = useState('')
+  const { setCity, setState } = useContext(LocationContext)
+
+  useEffect(() => {
+    // eslint-disable-next-line no-unused-expressions
+    setCity(city), setState(state)
+  }, [city, state])
+
   return (
     <main id="main-content" className="home__container">
       <div className="home__column">
