@@ -1,4 +1,5 @@
 @import './../../styles/colors';
+@import './../../styles/responsive';
 
 @mixin displayFlexRow($width: 100%) {
   display: flex;
@@ -13,6 +14,9 @@
     margin: 4rem 0 0;
     justify-content: space-between;
     width: 100%;
+    @media (max-width: $mobileLarge) {
+      flex-wrap: wrap;
+    }
   }
 
   &__title {
@@ -40,6 +44,11 @@
       color: $black;
       line-height: 2.1rem;
       padding: 0 0.5rem;
+    }
+  }
+  @media (max-width: $mobileLarge) {
+    &__select{
+      margin-top: 1rem;
     }
   }
 

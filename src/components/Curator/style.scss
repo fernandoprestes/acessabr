@@ -1,7 +1,8 @@
 @import './../../styles/colors';
+@import './../../styles/responsive';
 
 .curator {
-  &__container{
+  &__container {
     margin-bottom: 4rem;
   }
 
@@ -9,6 +10,11 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    @media (max-width: $mobileLarge) {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
   }
   &__title {
     font-size: 3.6rem;
