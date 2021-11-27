@@ -1,29 +1,25 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import SwiperCore, { Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Card } from '../Card'
+import 'swiper/swiper-bundle.css'
 import { api } from '../../config/api'
 import { FilterContext } from '../../contexts/FilterContext'
-
-import 'swiper/swiper-bundle.css'
+import { Card } from '../Card'
 
 SwiperCore.use(Pagination)
 
 export const Slider = () => {
-  const { filteredPlace, setFilteredPlace } = useContext(FilterContext)
+  const { filteredPlace } = useContext(FilterContext)
   const [places, setPlaces] = useState([])
 
   useEffect(() => {
     filterPlaces()
-    if(filteredPlace === ''){
-      getPlaces()
-    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filteredPlace])
 
   useEffect(() => {
     getPlaces()
   }, [])
-
 
   const getPlaces = async () => {
     const result = await api.get(`/places`)
@@ -33,6 +29,7 @@ export const Slider = () => {
   }
 
   const filterPlaces = async () => {
+    if (filteredPlace === '') return getPlaces()
     const result = await api.get(`/places?category=${filteredPlace}`)
     if (result.status === 200) {
       setPlaces(result.data)

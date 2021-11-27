@@ -1,10 +1,10 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useParams } from 'react-router'
 import { Pills } from '../../components/Pills'
+import { FilterContext } from '../../contexts/FilterContext'
 import { LocationContext } from '../../contexts/LocationContext'
 import imageSpotlight from '../../images/imagem-destaque.png'
 import './styles.scss'
-import { FilterContext } from '../../contexts/FilterContext'
 
 const PLACES = [
   'Museu',

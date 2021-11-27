@@ -10,7 +10,6 @@ ReactDOM.render(
     <div className="main__container">
       <BrowserRouter>
         <Routes />
-        
       </BrowserRouter>
     </div>
     <Footer />

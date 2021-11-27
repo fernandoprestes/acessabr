@@ -1,6 +1,6 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 import './styles.scss'
-import PropTypes from 'prop-types'
 
 export const Pills = ({ local, handleClick, selected }) => {
   return (

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Button } from '../Button'
-import './style.scss'
 import iconAudio from './../../images/icon-audio-descricao.png'
 import iconBanheiro from './../../images/icon-banheiro-acessivel.png'
 import iconBraile from './../../images/icon-braile.png'
@@ -11,6 +10,7 @@ import iconLibras from './../../images/icon-libras.png'
 import iconPiso from './../../images/icon-piso-tatil.png'
 import iconPorta from './../../images/icon-porta-larga.png'
 import iconRampa from './../../images/icon-rampa.png'
+import './style.scss'
 
 export const Card = ({ item }) => {
   const imagePath = require(`../../images/${item.image}`)

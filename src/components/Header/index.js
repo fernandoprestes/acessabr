@@ -1,5 +1,4 @@
-import React from 'react'
-import { useContext } from 'react'
+import React, { useContext } from 'react'
 import { LocationContext } from '../../contexts/LocationContext'
 import logoAcessaBR from './../../images/logo-acessabr.svg'
 import logoEbac from './../../images/logo-ebac.svg'

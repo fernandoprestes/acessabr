@@ -4,13 +4,14 @@ import { Slider } from '../Slider'
 import './style.scss'
 
 export const Places = () => {
-  const { filteredPlace, setFilteredPlace } = useContext(FilterContext)
+  const { filteredPlace } = useContext(FilterContext)
 
   return (
     <section className="places">
       <div className="places__header">
         <h2 className="places__title">
-          {filteredPlace === '' ? 'Locais' : filteredPlace} <span>Acessíveis</span>
+          {filteredPlace === '' ? 'Locais' : filteredPlace}{' '}
+          <span>Acessíveis</span>
         </h2>
         <div className="places__select">
           <h3>Ordernar por: </h3>
