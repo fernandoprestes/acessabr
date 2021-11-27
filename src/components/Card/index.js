@@ -150,7 +150,7 @@ export const Card = ({ item }) => {
           </li>
         </ul>
       </div>
-      <p>{item.descriprion}</p>
+      <p>{item.description}</p>
       <Button>Como Chegar</Button>
     </div>
   )

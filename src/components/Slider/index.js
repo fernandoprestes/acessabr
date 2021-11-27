@@ -14,11 +14,26 @@ export const Slider = () => {
   const [places, setPlaces] = useState([])
 
   useEffect(() => {
+    filterPlaces()
+    if(filteredPlace === ''){
+      getPlaces()
+    }
+  }, [filteredPlace])
+
+  useEffect(() => {
     getPlaces()
   }, [])
 
+
   const getPlaces = async () => {
     const result = await api.get(`/places`)
+    if (result.status === 200) {
+      setPlaces(result.data)
+    }
+  }
+
+  const filterPlaces = async () => {
+    const result = await api.get(`/places?category=${filteredPlace}`)
     if (result.status === 200) {
       setPlaces(result.data)
     }
