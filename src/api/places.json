@@ -1,0 +1,120 @@
+{
+  "places": [
+    {
+      "id": 1,
+      "name": "Museu da língua portuguesa",
+      "description": "lorem ipsun dolor sit amet consectetur adipisicing elit",
+      "location": {
+        "lat": "10212",
+        "long": "45879"
+      },
+      "facilities": [
+        { "item": 1, "status": true },
+        { "item": 2, "status": true },
+        { "item": 3, "status": true },
+        { "item": 4, "status": true },
+        { "item": 5, "status": true },
+        { "item": 6, "status": true },
+        { "item": 7, "status": true },
+        { "item": 8, "status": true },
+        { "item": 9, "status": true },
+        { "item": 10, "status": true }
+      ],
+      "image": "places/mercado-municipal-sp.png",
+      "alt": "Mercado"
+    },
+
+    {
+      "id": 2,
+      "name": "Mercado municipal",
+      "description": "lorem ipsun dolor sit amet consectetur adipisicing elit",
+      "location": {
+        "lat": "10212",
+        "long": "45879"
+      },
+      "facilities": [
+        { "item": 1, "status": true },
+        { "item": 2, "status": true },
+        { "item": 3, "status": true },
+        { "item": 4, "status": false },
+        { "item": 5, "status": true },
+        { "item": 6, "status": true },
+        { "item": 7, "status": true },
+        { "item": 8, "status": true },
+        { "item": 9, "status": true },
+        { "item": 10, "status": true }
+      ],
+      "image": "places/mercado-municipal-sp.png",
+      "alt": "Mercado"
+    },
+    {
+      "id": 3,
+      "name": "Auditório ibirapuera",
+      "description": "lorem ipsun dolor sit amet consectetur adipisicing elit",
+      "location": {
+        "lat": "10212",
+        "long": "45879"
+      },
+      "facilities": [
+        { "item": 1, "status": true },
+        { "item": 2, "status": false },
+        { "item": 3, "status": true },
+        { "item": 4, "status": true },
+        { "item": 5, "status": true },
+        { "item": 6, "status": false },
+        { "item": 7, "status": true },
+        { "item": 8, "status": true },
+        { "item": 9, "status": true },
+        { "item": 10, "status": false }
+      ],
+      "image": "places/mercado-municipal-sp.png",
+      "alt": "Mercado"
+    },
+    {
+      "id": 4,
+      "name": "Museu de artes de são paulo",
+      "description": "lorem ipsun dolor sit amet consectetur adipisicing elit",
+      "location": {
+        "lat": "10212",
+        "long": "45879"
+      },
+      "facilities": [
+        { "item": 1, "status": false },
+        { "item": 2, "status": true },
+        { "item": 3, "status": false },
+        { "item": 4, "status": true },
+        { "item": 5, "status": false },
+        { "item": 6, "status": true },
+        { "item": 7, "status": true },
+        { "item": 8, "status": false },
+        { "item": 9, "status": true },
+        { "item": 10, "status": true }
+      ],
+      "image": "places/mercado-municipal-sp.png",
+      "alt": "Mercado"
+    },
+    {
+      "id": 5,
+      "name": "Parque da independência",
+      "description": "lorem ipsun dolor sit amet consectetur adipisicing elit",
+      "location": {
+        "lat": "10212",
+        "long": "45879"
+      },
+      "facilities": [
+        { "item": 1, "status": true },
+        { "item": 2, "status": false },
+        { "item": 3, "status": true },
+        { "item": 4, "status": true },
+        { "item": 5, "status": true },
+        { "item": 6, "status": false },
+        { "item": 7, "status": true },
+        { "item": 8, "status": true },
+        { "item": 9, "status": true },
+        { "item": 10, "status": false }
+      ],
+      "image": "places/mercado-municipal-sp.png",
+      "alt": "Mercado"
+    }
+  ]
+}

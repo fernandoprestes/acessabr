@@ -24,8 +24,9 @@ export const Home = props => {
 
   useEffect(() => {
     // eslint-disable-next-line no-unused-expressions
-    setCity(city), setState(state)
-  }, [city, state])
+    setCity(city)
+    setState(state)
+  }, [city, setCity, setState, state])
 
   return (
     <main id="main-content" className="home__container">
