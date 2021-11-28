@@ -1,5 +1,5 @@
 import React from 'react'
-import iconTop from '../../images/icon-top.svg'
+import iconTop from '../../images/icons/icon-top.svg'
 import './style.scss'
 
 export const Footer = () => {

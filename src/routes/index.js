@@ -18,10 +18,11 @@ export const Routes = () => {
         <Header />
         <Switch>
           <Route
-            path="/:state/:city"
+            // path="/:state/:city" //routes
+            path="/"
             element={
               <>
-                <Home city={city} state={state} />
+                <Home city={'São Paulo'} state={'SP'} />
                 <Places />
                 <Curator />
               </>

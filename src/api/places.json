@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Museu da língua portuguesa",
       "category": "Museu",
-      "description": "lorem ipsun dolor sit amet consectetur adipisicing elit",
+      "description": "A história e evolução do idioma são contadas de forma interativa numa ampla e moderna área de exposição.",
       "location": {
         "lat": "10212",
         "long": "45879"
@@ -13,15 +13,15 @@
         { "item": 1, "status": true },
         { "item": 2, "status": true },
         { "item": 3, "status": true },
-        { "item": 4, "status": true },
+        { "item": 4, "status": false },
         { "item": 5, "status": true },
         { "item": 6, "status": true },
         { "item": 7, "status": true },
         { "item": 8, "status": true },
         { "item": 9, "status": true },
-        { "item": 10, "status": true }
+        { "item": 10, "status": false }
       ],
-      "image": "places/mercado-municipal-sp.png",
+      "image": "places/museu-da-lingua-portuguesa.png",
       "alt": "Mercado"
     },
 
@@ -29,7 +29,7 @@
       "id": 2,
       "name": "Mercado municipal",
       "category": "Mercado",
-      "description": "lorem ipsun dolor sit amet consectetur adipisicing elit",
+      "description": "Prédio histórico com praça de alimentação e boxes que vendem frutas raras, verduras, legumes e laticínios.",
       "location": {
         "lat": "10212",
         "long": "45879"
@@ -53,7 +53,7 @@
       "id": 3,
       "name": "Auditório ibirapuera",
       "category": "Teatro",
-      "description": "lorem ipsun dolor sit amet consectetur adipisicing elit",
+      "description": "O Auditório Ibirapuera é um edifício concebido por Oscar Niemeyer para apresentações de espetáculos musicais, situado no Parque do Ibirapuera",
       "location": {
         "lat": "10212",
         "long": "45879"
@@ -70,14 +70,14 @@
         { "item": 9, "status": true },
         { "item": 10, "status": false }
       ],
-      "image": "places/mercado-municipal-sp.png",
-      "alt": "Mercado"
+      "image": "places/auditorio-ibirapuera.png",
+      "alt": "Teatro"
     },
     {
       "id": 4,
-      "name": "Museu de artes de são paulo",
+      "name": "Museu de artes de São Paulo",
       "category": "Museu",
-      "description": "lorem ipsun dolor sit amet consectetur adipisicing elit",
+      "description": "Museu de Arte de São Paulo Assis Chateaubriand é um centro cultural e museu brasileiro concebido em 1947 idealizado pelo jornalista paraibano Assis Chateaubriand com o crítico de arte italiano Pietro Bardi",
       "location": {
         "lat": "10212",
         "long": "45879"
@@ -94,14 +94,14 @@
         { "item": 9, "status": true },
         { "item": 10, "status": true }
       ],
-      "image": "places/mercado-municipal-sp.png",
+      "image": "places/masp.png",
       "alt": "Museu de artes de São Paulo"
     },
     {
       "id": 5,
-      "name": "Parque da independência",
+      "name": "Parque da Independência",
       "category": "Parque",
-      "description": "lorem ipsun dolor sit amet consectetur adipisicing elit",
+      "description": "O Parque da Independência, inaugurado em 1989, nas margens do córrego do bairro do Ipiranga, na cidade de São Paulo, faz parte do patrimônio histórico cultural brasileiro devido ao Grito da Independência do país, ali proclamada por D. Pedro I.",
       "location": {
         "lat": "10212",
         "long": "45879"
@@ -118,7 +118,7 @@
         { "item": 9, "status": true },
         { "item": 10, "status": false }
       ],
-      "image": "places/mercado-municipal-sp.png",
+      "image": "places/parque-independencia.png",
       "alt": "Parque da idependência"
     }
   ]

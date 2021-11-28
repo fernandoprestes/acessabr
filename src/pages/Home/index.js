@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from 'react'
-import { useParams } from 'react-router'
+// import { useParams } from 'react-router'
+// usado para as rotas
 import { Pills } from '../../components/Pills'
 import { FilterContext } from '../../contexts/FilterContext'
 import { LocationContext } from '../../contexts/LocationContext'
@@ -16,19 +17,22 @@ const PLACES = [
   'Farmácia',
   'Loja',
   'Aquário',
-  "Mercado"
+  'Mercado'
 ]
 
-export const Home = props => {
-  const { city, state } = useParams()
+export const Home = ({ city, state }) => {
+  // const { city, state } = useParams() // com rotas
+  // const { city, state } = useContext(LocationContext) // com context
   // const [selectedPill, setSelectedPill] = useState('')
+
   const { setCity, setState } = useContext(LocationContext)
   const { filteredPlace, setFilteredPlace } = useContext(FilterContext)
 
   useEffect(() => {
     // eslint-disable-next-line no-unused-expressions
-    setCity(city)
-    setState(state)
+    // context
+    setCity('São paulo')
+    setState('SP')
   }, [city, setCity, setState, state])
 
   const handleFilterPlace = item => {
@@ -37,7 +41,6 @@ export const Home = props => {
     }
     setFilteredPlace(item)
   }
-
   return (
     <main id="main-content" className="home__container">
       <div className="home__column">

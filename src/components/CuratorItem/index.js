@@ -1,8 +1,7 @@
 import React from 'react'
-import curatorPhoto from '../../images/avatar-elizabeth.jpg'
 import './style.scss'
 
-export const CuratorItem = () => {
+export const CuratorItem = ({ curatorPhoto, curatorName }) => {
   return (
     <div className="curatorItem__container">
       <img
@@ -12,7 +11,7 @@ export const CuratorItem = () => {
       />
       <div className="curatorItem__details">
         <div>
-          <h3>Elizabeth Lee</h3>
+          <h3>{curatorName}</h3>
           <span>Curator</span>
         </div>
         <p>
